@@ -49,7 +49,12 @@ begin
        w_addends <= x"FF"; w_Cin <= '1'; wait for 10 ns;
 	       assert (w_sum = x"E" and w_Cout = '1') report "bad with ones" severity failure;
        -- TODO, a few other test cases
-	
+       w_addends <= x"FF"; w_Cin <= '1'; wait for 10 ns;
+        assert (w_sum = x"01" and w_Cout = '0') report "bad with max input and carry-in" severity failure;
+       w_addends <= x"00"; w_Cin <= '1'; wait for 10 ns;
+        assert (w_sum = x"01" and w_Cout = '0') report "bad with zero input and carry-in" severity failure;
+       w_addends <= x"65"; w_Cin <= '0'; wait for 10 ns;
+        assert (w_sum = x"CA" and w_Cout = '1') report "bad with random vals" severity failure;
 		wait; -- wait forever
 	end process;	
 	-----------------------------------------------------	

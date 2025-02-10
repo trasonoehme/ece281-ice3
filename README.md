@@ -1,5 +1,7 @@
 # ECE 281 ICE 3: Ripple-Carry Adder with Top Level Design
 
+Documentation: I did not revieve any help on this Homework.
+
 This is a **template** repository.
 
 [ICE 3 instructions](https://usafa-ece.github.io/ece281-book/ICE/ICE3.html)
@@ -22,3 +24,7 @@ Then it **elaborates** the entity defined by `$TB_ENTITY`
 Finally, the workflow **runs** the simulation. If successful then it will quietly exit with a `0` code.
 If any of the `assert` statements fail then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
 Assert statements of other severity levels will be reported, but not fail the workflow.
+
+## Documentation
+I did not revieve any help on this Homework.
+
