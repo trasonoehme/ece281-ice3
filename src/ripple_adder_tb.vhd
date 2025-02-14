@@ -32,7 +32,7 @@ begin
 	   A    => w_addends(3 downto 0),
 	   B    => w_addends(7 downto 4),
 	   Cin  => w_Cin,
-	   S    => w_sum,
+	   S    => w_sum(3 downto 0),
 	   Cout => w_Cout
 	);
 	
